@@ -1,0 +1,139 @@
+#content {
+    width: 100%;
+    margin-top: 1em;
+}
+
+#content h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.col {
+    width: calc(100% / 3 - 16px);
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+#content .restaurant-search {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content .restaurant-search-box {
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#content .search-control {
+    width: 30%;
+    padding: 15px;
+    border: 2px solid #62D2A2;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#content .restaurant-search-box>input:focus {
+    outline: 0;
+}
+
+#content .restaurant-search-box>input:focus::placeholder {
+    font-weight: bold;
+    color: black;
+}
+
+#content .restaurant-search-box>input::placeholder {
+    color: grey;
+    font-weight: bold;
+}
+
+#content .search-btn {
+    cursor: pointer;
+    background-color: #62D2A2;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-transform: uppercase;
+    width: 10%;
+}
+
+#content .search-btn:hover {
+    background-color: #EAEAEA;
+    color: black;
+    border-right: 2px solid #62D2A2;
+    border-top: 2px solid #62D2A2;
+    border-bottom: 2px solid #62D2A2;
+}
+
+.card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 6px 0px;
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+}
+
+.card .card-title {
+    background-color: #62D2A2;
+    margin: 1em;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card .card-title a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-block;
+    line-height: 44px;
+}
+
+.card-location-rating {
+    columns: 2;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.card .card-city {
+    text-align: right;
+}
+
+.card .card-city i {
+    color: red;
+}
+
+.card .rating {
+    color: #62D2A2;
+    text-align: left;
+}
+
+.card .rating i {
+    color: #FEDB39;
+}
+
+.card-detail {
+    padding: 15px;
+}
+
+.card-descripttion {
+    color: #1FAB89
+}

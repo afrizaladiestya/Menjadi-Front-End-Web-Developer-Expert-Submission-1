@@ -1,0 +1,129 @@
+@media (max-width: 1200px) {
+    .card img {
+        max-height: 190px;
+    }
+
+    .search-control {
+        width: 30%;
+    }
+
+    .search-btn {
+        width: 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card img {
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-menu-list {
+        margin: 20px 0;
+        font-size: 1.1rem;
+    }
+
+    .nav-menu-list li {
+        margin-left: 0;
+    }
+
+    .col {
+        width: calc(100% / 2 - 16px);
+    }
+
+    .card img {
+        max-height: 165px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0 46px;
+    }
+
+    .hero .title {
+        font-size: 2.3rem;
+    }
+
+    .hero .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .nav-menu-list {
+        background-color: #62D2A2;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 34%;
+        margin-top: 0;
+        padding: 64px 20px;
+        flex-direction: column;
+        align-items: flex-end;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .nav-menu-list li {
+        padding: 10px 0;
+    }
+
+    .nav-menu-list a {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .open .nav-menu-list {
+        transform: translateX(0);
+    }
+
+    .menu-button {
+        margin: auto 0;
+        width: 44px;
+        height: 44px;
+        border: 0;
+        border-radius: 3px;
+        background-color: #FBFBFB;
+        color: #62D2A2;
+        outline: none;
+        font-size: 2rem;
+        display: block;
+        z-index: 2;
+        cursor: pointer;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+
+    .menu i.fa-times,
+    .menu.open i.fa-bars {
+        display: none;
+        animation: enter 0.8s;
+    }
+
+    .menu.open i.fa-times,
+    .menu i.fa-bars {
+        display: block;
+        animation: enter 0.8s;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .nav-menu-list {
+        width: 45%;
+        padding: 64px 20px;
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-block;
+        text-align: center;
+    }
+}
